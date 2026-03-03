@@ -1,0 +1,522 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Matangi:wght@300..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Sen:wght@400..800&display=swap');
+
+.header {
+    background: linear-gradient(135deg, #1e3c72, #2a5298, #3b82f6);
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px black;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+}
+
+.alert {
+    margin-right: 10px;
+    transform: scale(1.3,1.3);
+    padding: 5px 5px;
+    clip-path: circle();
+    background-color: black;
+    color: aqua;
+}
+
+.logo h1 {
+    color: white;
+    font-size: 1.8rem;
+    margin: 0;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-family: 'Matangi';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+.sos {
+    font-family: "Matangi";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Material UI Icon */
+.ui-icon {
+    background: black;
+    padding: 5px 5px;
+    clip-path: circle();
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav > div.icon {
+    color: aqua;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+    font-family: "Matangi";
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 10px 8px;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.nav > div.icon > a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.nav > div.icon:hover {
+    background: #00e0ff;
+    transition: background-color 0.2s;
+    a {
+        color: black;
+    }
+}
+
+.btn-cta {
+    background-color: #00e0ff;
+    color: black;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    text-decoration: unset;
+}
+
+
+
+.sos {
+    display: inline-block;
+    padding: 3px;
+    border-radius: 40px;
+    background: red;
+    background-size: 400% 400%;
+    transition: 0.4s ease;
+}
+
+.btn-cta {
+    background: red;
+    color: #ffffff;
+    padding: 12px 28px;
+    border-radius: 40px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 800;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-shadow: 0 0 3px black;
+}
+
+/* Animate wrapper on hover */
+.sos:hover {
+    transform: scale(1.05,1.05);
+    transition: transform 0.2s;
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Mobile Responsive */
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 4rem 2rem;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin: 0 0 1rem 0;
+    font-family: 'poppins';
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin: 0;
+    font-family: 'Nunito';
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+/* Body Section */
+.body-section {
+    padding: 3rem 2rem;
+    background: #030a1b;
+}
+/* .body-section:hover{
+    background: #0facbe9a;
+    transition: background 0.3s ease;
+
+} */
+
+.features-container {
+    max-width: 1200px;
+    margin: 0 auto 4rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    background-size: 300% 300%;
+    animation: blueGradientMove 8s ease infinite;
+
+    border-radius: 18px;
+    padding: 28px;
+    max-width: 360px;
+    color: #ffffff;
+
+    box-shadow: 0 15px 15px rgba(0, 150, 255, 0.35);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* Soft shine overlay */
+.feature-card::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.15), transparent 60%);
+    transform: rotate(25deg);
+    pointer-events: none;
+}
+
+/* Hover effect */
+.feature-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 45px rgba(0, 180, 255, 0.5);
+}
+
+/* Gradient animation */
+@keyframes blueGradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Heading */
+.feature-card h3 {
+    font-size: 1rem;
+    margin-bottom: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    font-family: "Matangi";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-wrap: balance;
+}
+
+/* Paragraph */
+.feature-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: "poppins";
+    font-weight: 300;
+}
+
+
+/* About Section */
+.about-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.about-section h4 {
+    color: #667eea;
+    font-size: 2rem;
+    margin: 0 0 1.5rem 0;
+    font-family: 'Matangi';
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.about-section p {
+    color: white;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin: 0 0 1.5rem 0;
+    font-family: 'poppins';
+}
+
+.about-section p:last-child {
+    margin-bottom: 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .header-container {
+        padding: 0 1rem;
+    }
+
+    .logo h1 {
+        font-size: 1.4rem;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        flex-direction: column;
+        gap: 1rem;
+        padding: 2rem;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    .nav.active {
+        max-height: 300px;
+    }
+
+    .nav a,
+    .btn-cta {
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn-cta {
+        padding: 0.75rem 1rem;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(10px, 10px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(8px, -8px);
+    }
+
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .features-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .about-section {
+        padding: 2rem;
+    }
+
+    .about-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-section p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Footer Styles */
+.footer {
+    background: linear-gradient(135deg, #1e3c72, #2a5298, #3b82f6);
+    color: white;
+    padding: 3rem 0 1rem 0;
+    margin-top: 5rem;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-section h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-logo h3 {
+    font-size: 1.4rem;
+    margin: 0;
+    font-weight: 600;
+    font-family: 'Matangi', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-alert {
+    font-size: 2rem;
+    background-color: black;
+    color: aqua;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.footer-description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section li {
+    margin-bottom: 0.7rem;
+}
+
+.footer-section a {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+    font-family: 'Nunito', sans-serif;
+}
+
+.footer-section a:hover {
+    color: #00d9ff;
+    padding-left: 5px;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    color: white;
+}
+
+.social-icon:hover {
+    background-color: #00d9ff;
+    color: #1e3c72;
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 1.5rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.9rem;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .footer-section h4 {
+        font-size: 1rem;
+    }
+
+    .footer-logo h3 {
+        font-size: 1.2rem;
+    }
+
+    .footer-bottom {
+        font-size: 0.8rem;
+    }
+}
