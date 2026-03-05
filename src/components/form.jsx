@@ -5,10 +5,9 @@ import LockIcon from '@mui/icons-material/Lock';
 import Email from '@mui/icons-material/Mail'
 
 const LoginForm = () => {
-
     return (
         <div className="login-container">
-            <form className="login-form" action="/user/login" method="post">
+            <form className="login-form" action="https://women-one-tap-sos-backend.onrender.com/user/login" method="post">
                 <h2 className="form-title">
                     <LockIcon className="lockicon"/>
                     Login

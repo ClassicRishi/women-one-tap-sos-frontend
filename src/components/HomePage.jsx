@@ -13,6 +13,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import DirectionsIcon from "@mui/icons-material/Directions";
 import ShieldIcon from "@mui/icons-material/Shield";
 
+
 function HomePage() {
   const [destination, setDestination] = useState("");
   const navigate = useNavigate();

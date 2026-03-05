@@ -6,7 +6,7 @@ import PasswordIcon from '@mui/icons-material/Password';
 const LoginPage = () => {
     return (
         <div className="login-container">
-            <form className="login-form" action="/user/login" method="post">
+            <form className="login-form" action="https://women-one-tap-sos-backend.onrender.com/user/login" method="post">
                 <h2 className="heading">Welcome Back</h2>
 
                 <div className="input-group">

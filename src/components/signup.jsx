@@ -10,7 +10,7 @@ const SignupForm = () => {
 
     return (
         <div className="signup-form-container">
-            <form style={{ maxWidth: "400px", margin: "auto" }} action="/user/register" method="post">
+            <form style={{ maxWidth: "400px", margin: "auto" }} action="https://women-one-tap-sos-backend.onrender.com/user/register" method="post">
                 <h2><LockIcon /> Signup</h2>
 
                 <div>

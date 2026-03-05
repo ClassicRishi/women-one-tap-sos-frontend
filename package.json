@@ -26,7 +26,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "https://women-one-tap-sos-backend.onrender.com",
   "eslintConfig": {
     "extends": [
       "react-app",
