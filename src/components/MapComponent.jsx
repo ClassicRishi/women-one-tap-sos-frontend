@@ -3,8 +3,6 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
-import HomeIcon from "@mui/icons-material/Home";
-import { renderToStaticMarkup } from "react-dom/server";
 
 /* ── Custom pulsing location marker ── */
 const locationIconSvg = `
