@@ -11,7 +11,7 @@ export default function RegisterPage() {
 
   return (
     <div className="register-container">
-      <form className="register-form" action="https://women-one-tap-sos-backend.onrender.com/user/register" method="post">
+      <form className="register-form" action="/api/user/register" method="post">
         <h2 className='heading'>Create Account</h2>
         <PersonIcon />
         <div className="input-group">
